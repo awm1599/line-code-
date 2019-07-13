@@ -1,0 +1,11 @@
+python3--->python2:
+
+cd /usr/bin
+sudo rm python
+sudo ln -s /usr/bin/python2.7 /usr/bin/python
+
+python2--->python3:
+
+cd /usr/bin
+sudo rm python
+sudo ln -s /usr/bin/python3.5 /usr/bin/python
