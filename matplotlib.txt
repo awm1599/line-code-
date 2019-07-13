@@ -1,0 +1,6 @@
+报错：
+
+ImportError: No module named matplotlib.pyplot
+
+解决：
+sudo apt-get install python-matplotlib
