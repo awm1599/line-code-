@@ -1,0 +1,48 @@
+引入panda 库一直报错：ImportError: No module named pandas
+解决方法：
+下载链接：
+
+https://conda.io/miniconda.html
+
+下载完安装：(这也是个难题)
+
+bash Miniconda3-latest-MacOSX-x86_64.sh 
+
+安装结束之后：
+
+conda create --name trypandas numpy pandas jupyter 
+
+如果说：conda comman not found
+
+解决方法 ：
+
+http://blog.csdn.net/H_O_W_E/article/details/78494131
+
+1， 确认.bashrc这里有添加运行路径：
+
+sudo gedit ~/.bashrc
+最后一行加上
+
+export PATH="/home/download/anaconda3/bin:$PATH"
+
+2. 确认profile都添加路径：
+
+sudo gedit /etc/profile
+最后一行加上
+
+export PATH="/home/download/anaconda3/bin:$PATH"
+
+还有一步确保路径生效：
+
+source /etc/profile 
+
+但后面发现可以直接：
+
+pip install pandas
+
+python3的：
+
+ pip3 install pandas
+
+ 完之后ImportError: No module named pandas报错没有了
+ 换成了FileNotFoundError: [Errno 2] File b'Data.csv' does not exist: b'Data.csv'
