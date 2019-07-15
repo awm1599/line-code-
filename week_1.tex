@@ -1,0 +1,37 @@
+\documentclass[UTF-8]{article}
+\usepackage{ctex}
+\usepackage{CJK}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\begin{document}
+	\title{\heiti 学习报告 Week 1}\quad
+	\author{\kaishu 韩啟泰}\quad
+	\date{2019年7月14日}
+	\maketitle
+	{\songti }
+	\section{机器学习(machine learning)}
+		机器学习发源于人工智能领域，我们希望创造出具有智慧的机器，通过编程来让机器完成一些基础的工作。如如何寻找A到B的最短路径，网页搜索照片标签或邮件反垃圾系统，做这些事情的唯一方法是让机器自己学习自己去做，因此机器学习已经发展成为计算机的一项新能力，并且与工业界和基础学科界有着紧密的联系
+	\section{数据挖掘(database mining)}
+		机器学习如此普遍的原因之一就是网络和自动化技术的快速发展，我们拥有大量的数据集，并试图采用机器学习算法来挖掘数据，来更好的理解用户，并更好的为用户服务。如医疗记录，假如能将医疗记录转化为医疗知识，那就能更好的理解疾病，此外还有计算生物学、工程……
+	\section{监督学习（回归问题）}
+		预测一个连续值的输出，比如房价、肿瘤预测等等，实际上还是一个离散值，但通常把它看作实际数字，是一个标量值，一个连续的数。而回归，意味着要预测这类连续值属性的种类
+		\subsection{房价预测}
+		\subsubsection{预测函数(假设函数)}\\
+			$h(\theta)=\theta + \theta x$\\
+			对于给定的数据集，我们需要根据X合理的预测Y值，在线性回归中，还需要解决一个最小化的问题\\
+			\subsubsection{代价函数(平方误差代价函数)(平方误差函数)}\\
+			$J(\theta_0,\theta_1)=\dfrac{1}{2m} \sum\limits_{i=1}^{m} [h\theta(x^i)-y^i]^2$\\
+			\subsubsection{目标函数}\\	
+			$minimize_{(\theta_0,\theta_1)} J(\theta_0,\theta_1)$
+			\subsubsection{梯度下降算法(线性回归)}
+			$\theta_j:=\theta_j-\alpha\dfrac{\partial J(\theta_0,\theta_1)}{\partial \theta_j} $
+			$\alpha$是一个数字，被称为学习效率
+	\section{无监督学习（聚类算法）}
+		没有属性或标签这一概念，所有数据都是一样的没有区别，在无监督学习中，没有人告诉我们怎么做，我们也不知道每个数据点究竟是什么意思。对于给定的数据集，无监督学习算法可以判定，该数据包含的两个不同的聚类。比如谷歌新闻的分类，组成新闻专题
+		\subsection{肿瘤预测}
+
+\end{document}
+
+
+
