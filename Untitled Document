@@ -1,0 +1,11 @@
+Ubuntu执行apt-get upgrade报错ImportError: No module named 'ConfigParser'
+
+原因：
+在Python 3中, ConfigParser 被重命名为 configparser
+如果默认版本是Python3执行更新操作会报错
+
+解决方案：
+切换Python版本
+
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python2 200
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 100
